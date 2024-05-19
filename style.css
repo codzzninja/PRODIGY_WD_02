@@ -1,0 +1,83 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FF0080;
+    font-family: 'Roboto mono', monospace;
+}
+
+.container {
+    background-color: #fff;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+}
+
+.timer-display {
+    width: 92%;
+    background: #fff;
+    left: 4%;
+    margin: auto;
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+    animation: pulse 2s infinite;
+}
+
+.buttons {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #FF0080;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:hover, .buttons button:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    animation: pulse 1s;
+}
+
+.laps {
+    max-height: 150px;
+    overflow-y: auto;
+    width: 90%;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.laps div {
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
